@@ -1,0 +1,238 @@
+/* GLOBAL SETTING */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 16px;
+}
+:root{
+    --navColor: rgb(153,158,164);
+    --carouselIcon : rgba(33, 136, 132, 0.8);
+    --fontDiemUuViet : #D4B03B;
+}
+/* GLOBAL SETTING */
+
+/* BEGIN MENU */
+.nav-link {
+    color:var(--navColor);
+    font-weight: 500;
+}
+#menuPhone{
+    border:1px solid black;
+    padding: 0.2rem 0.5rem;
+}
+/* END MENU */
+
+/* BEGIN CAROUSEL */
+
+.carousel-inner{
+    /* height: 500px; */
+}
+
+.carousel-inner img{
+    /* height: 100%; */
+    width: 100%;
+}
+
+.carousel-indicators{
+    bottom: 10%;
+
+}
+
+.carousel-indicators li{
+    margin: 0 0.8rem;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.carousel-indicators .active{
+    background-color: transparent;
+    border-color: black;
+    transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -ms-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+.carousel-control-prev, .carousel-control-next{
+    width: 5%;
+    color: var(--carouselIcon);
+    bottom: 5%
+}
+
+.carousel-control-prev i, .carousel-control-next i{
+    font-size: 3rem;
+}
+
+/* END CAROUSEL */
+
+/* BEGIN DIEM UU VIET */
+#diemuuviet{
+    position: relative;
+    /* height: 800px; */
+}
+
+/* #diemuuviet  #titleDiemUuViet{
+    z-index: 10000;
+    position: absolute;
+    height: 20%;
+    top: 10%;
+    right: 35%;
+} */
+#titleDiemUuViet>h1{
+    color : var(--fontDiemUuViet);
+    font-size: 4rem;
+}
+#titleDiemUuViet>h4{
+    font-weight: normal;
+}
+
+
+.bg-over{
+    overflow: hidden;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 65%;
+    height: 100%;
+    -ms-transform: skewX(-20deg); /* IE 9 */
+    -webkit-transform: skewX(-20deg); /* Safari 3-8 */
+    transform: skewX(-20deg);
+    
+}
+
+.bg-image2{
+    background-image: url(../img/training2.jpg);
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 0;
+    width: 60%;
+    right: 0;
+    overflow: hidden;
+}
+
+.diemuuvietItem .block{
+    position: relative;
+    padding-left: 85px;
+    margin-bottom: 30px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+.diemuuvietItem .block .number{
+    position: absolute;
+    left: 1%;
+    top: -34px;
+    font-style: italic;
+    color: #454545;
+    font-weight: 800;
+    font-size: 92px;
+    cursor: pointer;
+}
+
+.diemuuvietItem .block:hover .number
+,.diemuuvietItem .block:hover h4
+{
+    color: var(--fontDiemUuViet);
+}
+
+/* END DIEM UU VIET */
+
+/* BEGIN DANH SÁCH KHÓA HỌC */
+#danhsachkhoahoc{
+    padding-top: 5rem;
+}
+
+#titleDanhSachKhoaHoc h3{
+    font-weight: bold;
+}
+
+#titleDanhSachKhoaHoc h2 {
+    color: var(--fontDiemUuViet);
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.imgKhoaHoc{
+    overflow: hidden;
+}
+
+.card:hover .card-img-top{
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transition-duration: 2s;
+    
+}
+
+.card-img-top{
+    height: 220px;
+}
+.card-body{
+    border-top: 5px solid var(--fontDiemUuViet);
+}
+
+.card-body h4{
+    position: relative;
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+    padding-left: 1rem;
+    text-transform: uppercase;
+}
+
+.card-body h4::before{
+    content: "";
+    position: absolute;
+    background-color: var(--fontDiemUuViet);
+    top: 25%;
+    left: -5%;
+    height: 20px;
+    width:8px;
+    transform: skewX(-30deg);
+    -webkit-transform: skewX(-30deg);
+    -moz-transform: skewX(-30deg);
+    -ms-transform: skewX(-30deg);
+    -o-transform: skewX(-30deg);
+}
+.card-body h4::after{
+    content: "";
+    position: absolute;
+    background-color: black;
+    top: 25%;
+    left: -1%;
+    height: 20px;
+    width:8px;
+    transform: skewX(-30deg);
+    -webkit-transform: skewX(-30deg);
+    -moz-transform: skewX(-30deg);
+    -ms-transform: skewX(-30deg);
+    -o-transform: skewX(-30deg);
+}
+/* END DANH SÁCH KHÓA HỌC */
+
+/* BEGIN FOOTER */
+#footer{
+    background-color: #2f2f2f;
+}
+
+
+/* END FOOTER */
