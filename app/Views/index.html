@@ -43,6 +43,99 @@
 						<li class="nav-item">
 							<a class="nav-link" href="./layouts/lienhe.html">LIÊN HỆ</a>
 						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">ĐĂNG KÝ</a>
+							<!-- The Modal -->
+							<div class="modal" id="myModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+					
+										<!-- FORM ĐĂNG KÝ -->
+										<div class="form modal-body">
+											<button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+											<ul class="tab-group">
+												<li class="tab active"><a href="#signup">Đăng ký</a></li>
+												<li class="tab"><a href="#login">Đăng nhập</a></li>
+											</ul>
+											<div class="tab-content">
+												<div id="signup">
+													<h1>Đăng ký và bắt đầu học</h1>
+
+													<form action="/" method="post">
+
+														<div class="top-row">
+															<div class="field-wrap">
+																<label>
+																	Tên đăng nhập<span class="req">*</span>
+																</label>
+																<input type="text" required autocomplete="off" />
+															</div>
+
+															<div class="field-wrap">
+																<label>
+																	Họ tên<span class="req">*</span>
+																</label>
+																<input type="text" required autocomplete="off" />
+															</div>
+														</div>
+
+														<div class="field-wrap">
+															<label>
+																Email Address<span class="req">*</span>
+															</label>
+															<input type="email" required autocomplete="off" />
+														</div>
+
+														<div class="field-wrap">
+															<label>
+																Mật khẩu<span class="req">*</span>
+															</label>
+															<input type="password" required autocomplete="off" />
+														</div>
+
+														<button type="button" id="dangky" class="button button-block" />Đăng ký</button>
+
+													</form>
+
+												</div>
+
+												<div id="login">
+													<h1>Cám ơn bạn đã quay lại!</h1>
+
+													<form action="/" method="post">
+
+														<div class="field-wrap">
+															<label>
+																Tên đăng nhập<span class="req">*</span>
+															</label>
+															<input type="email" required autocomplete="off" />
+														</div>
+
+														<div class="field-wrap">
+															<label>
+																Mật khẩu<span class="req">*</span>
+															</label>
+															<input type="password" required autocomplete="off" />
+														</div>
+
+														<p class="forgot"><a href="#">Quên mật khẩu?</a></p>
+
+														<button class="button button-block" id="dangnhap" />Đăng nhập</button>
+
+													</form>
+
+												</div>
+
+											</div><!-- tab-content -->
+
+										</div>
+										<!-- FORM ĐĂNG KÝ -->
+
+									</div>
+								</div>
+							</div>
+
+						</li>
 					</ul>
 				</div>
 			</nav>
@@ -81,7 +174,9 @@
 		</div>
 	</section>
 	<!-- END CAROUSEL -->
-
+	<button id="myBtn" title="Go to top">
+		<i class="fa fa-plane"></i>
+	</button>
 	<!-- BEGIN DIEM UU VIET -->
 	<section id="diemuuviet" class="pt-5">
 		<div class="bg-image2"></div>
@@ -90,7 +185,7 @@
 			<div class="row">
 
 				<div class="col-md-9">
-					<div id="titleDiemUuViet" class="text-right">
+					<div id="titleDiemUuViet" class="text-right pb-5">
 						<h1>Điểm ưu việt</h1>
 						<h4>CHỈ CÓ TẠI CYBERSOFT</h4>
 					</div>
@@ -260,7 +355,7 @@
 	<footer id="footer" class="pt-5 mt-5">
 		<div class="container">
 			<div class="row">
-				<div class="col-4 px-4">
+				<div class="col-md-4 col-12 px-4 footer-left">
 					<a href="./index.html">
 						<img src="../../assets/img/cybersoft-logo-min.png" alt="logo-footer">
 					</a>
@@ -269,7 +364,7 @@
 						trong mô hình Agile để trở thành một lập trình chuyên nghiệp, đáp ứng mọi nhu cầu tuyển dụng của Doanh nghiệp
 					</p>
 				</div>
-				<div class="col-4 px-4">
+				<div class="col-md-3 col-12 px-4 footer-mid">
 					<h4>THÔNG TIN</h4>
 					<ul class="thongtin">
 						<li><a href="./index.html">Trang chủ</a></li>
@@ -279,10 +374,10 @@
 						<li><a href="./layouts/lienhe.html">Liên hệ</a></li>
 					</ul>
 				</div>
-				<div class="col-4 px-4">
+				<div class="col-md-4 col-12 px-4 footer-right">
 					<h4>LIÊN HỆ ĐỂ ĐƯỢC TƯ VẤN</h4>
 					<ul class="thongtin">
-						<li> <span>Cơ sở 1 :</span> 459 Sư Vạn Hạnh, Quận 10 - HCM</li>
+						<li><span>Cơ sở 1 :</span> 459 Sư Vạn Hạnh, Quận 10 - HCM</li>
 						<li><span>Cơ sở 2 :</span> 82 Ung Văn Khiêm, Quận Bình Thạnh (cuối đường D2 - gần ĐH HuTech) - HCM</li>
 						<li>
 							<span>T :</span>
@@ -306,6 +401,8 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
 	<!-- Latest compiled JavaScript -->
 	<script src="../../assets/js/bootstrap.min.js"></script>
+	<!-- HOME JS -->
+	<script src="../../assets/js/homeJS.js"></script>
 </body>
 
 </html>
