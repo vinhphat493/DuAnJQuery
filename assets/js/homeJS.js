@@ -2,7 +2,7 @@
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
-    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+    if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
         document.getElementById("myBtn").style.display = "block";
     } else {
         document.getElementById("myBtn").style.display = "none";
@@ -13,20 +13,6 @@ $('#myBtn').click(function () {
     $('html, body').animate({ scrollTop: 0 }, 'slow');
 });
 // back to top JS
-
-//navbar
-$(document).scroll(function(){
-    console.log($("#header"))
-    if($(this).scrollTop() > 100 ){
-        $("#header").addClass("fixed-top");
-        $("#header").addClass("scroll-fixed");
-    }else
-    {
-        $("#header").removeClass("fixed-top");
-        $("#header").removeClass("scroll-fixed");
-    }
-});
-//navbar
 
 //form đăng ký
 $('.form').find('input, textarea').on('keyup blur focus', function (e) {
@@ -77,5 +63,4 @@ $('.form').find('input, textarea').on('keyup blur focus', function (e) {
       $(this).addClass(".close");
   })
 //form đăng ký
-
 

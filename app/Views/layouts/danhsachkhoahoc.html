@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>CyberSoft Academy</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../assets/css/HomeStyle.css">
+</head>
+
+<body>
+    <button id="myBtn" title="Go to top">
+        <i class="fa fa-plane"></i>
+    </button>
+    <div class="container-fluid px-0" id="contentPage">
+        <!-- BEGIN HEADER -->
+        <header id="header">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md">
+                    <a class="navbar-brand" href="../index.html">
+                        <img src="../../../assets/img/logo.png" alt="logo" width="70%">
+                    </a>
+                    <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+                        aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+                        <i id="menuPhone" class="fa fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavId">
+                        <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../index.html">TRANG CHỦ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./gioithieu.html">GIỚI THIỆU</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="danhsachkhoahoc.html">DANH SÁCH KHÓA HỌC</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./gochocvien.html">GÓC HỌC VIÊN</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./lienhe.html">LIÊN HỆ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-toggle="modal" data-target="#myModal">ĐĂNG KÝ</a>
+                                <!-- The Modal -->
+                                <div class="modal" id="myModal">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+
+                                            <!-- FORM ĐĂNG KÝ -->
+                                            <div class="form modal-body">
+                                                <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times"></i></button>
+                                                <ul class="tab-group">
+                                                    <li class="tab active"><a href="#signup">Đăng ký</a></li>
+                                                    <li class="tab"><a href="#login">Đăng nhập</a></li>
+                                                </ul>
+                                                <div class="tab-content">
+                                                    <div id="signup">
+                                                        <h1>Đăng ký và bắt đầu học</h1>
+
+                                                        <form action="/" method="post">
+
+                                                            <div class="top-row">
+                                                                <div class="field-wrap">
+                                                                    <label>
+                                                                        Tên đăng nhập<span class="req">*</span>
+                                                                    </label>
+                                                                    <input type="text" required autocomplete="off" />
+                                                                </div>
+
+                                                                <div class="field-wrap">
+                                                                    <label>
+                                                                        Họ tên<span class="req">*</span>
+                                                                    </label>
+                                                                    <input type="text" required autocomplete="off" />
+                                                                </div>
+                                                            </div>
+
+                                                            <div class="field-wrap">
+                                                                <label>
+                                                                    Email Address<span class="req">*</span>
+                                                                </label>
+                                                                <input type="email" required autocomplete="off" />
+                                                            </div>
+
+                                                            <div class="field-wrap">
+                                                                <label>
+                                                                    Mật khẩu<span class="req">*</span>
+                                                                </label>
+                                                                <input type="password" required autocomplete="off" />
+                                                            </div>
+
+                                                            <button type="button" id="dangky" class="button button-block" />Đăng
+                                                            ký</button>
+
+                                                        </form>
+
+                                                    </div>
+
+                                                    <div id="login">
+                                                        <h1>Cám ơn bạn đã quay lại!</h1>
+
+                                                        <form action="/" method="post">
+
+                                                            <div class="field-wrap">
+                                                                <label>
+                                                                    Tên đăng nhập<span class="req">*</span>
+                                                                </label>
+                                                                <input type="email" required autocomplete="off" />
+                                                            </div>
+
+                                                            <div class="field-wrap">
+                                                                <label>
+                                                                    Mật khẩu<span class="req">*</span>
+                                                                </label>
+                                                                <input type="password" required autocomplete="off" />
+                                                            </div>
+
+                                                            <p class="forgot"><a href="#">Quên mật khẩu?</a></p>
+
+                                                            <button class="button button-block" id="dangnhap" />Đăng
+                                                            nhập</button>
+
+                                                        </form>
+
+                                                    </div>
+
+                                                </div><!-- tab-content -->
+
+                                            </div>
+                                            <!-- FORM ĐĂNG KÝ -->
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+
+        </header>
+        <!-- END HEADER -->
+
+
+        <!-- BEGIN DANH SÁCH KHÓA HỌC -->
+        <section id="danhsachkhoahoc">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center pb-5" id="titleDanhSachKhoaHoc">
+                        <h3>CÁC KHÓA HỌC ĐANG CÓ TẠI</h3>
+                        <h2>CyberSoft Academy</h2>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 pb-5">
+                        <div class="card">
+                            <div class="imgKhoaHoc">
+                                <img class="card-img-top img-fluid" src="../../../assets/img/frontEnd.jpg" alt="Card image">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">John Doe</h4>
+                                <p class="card-text">Some example text.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 pb-5">
+                        <div class="card">
+                            <div class="imgKhoaHoc">
+                                <img class="card-img-top img-fluid" src="../../../assets/img/fullJS.png" alt="Card image">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">John Doe</h4>
+                                <p class="card-text">Some example text.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 pb-5">
+                        <div class="card">
+                            <div class="imgKhoaHoc">
+                                <img class="card-img-top img-fluid" src="../../../assets/img/nodejs.png" alt="Card image">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">John Doe</h4>
+                                <p class="card-text">Some example text.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 pb-5">
+                        <div class="card">
+                            <div class="imgKhoaHoc">
+                                <img class="card-img-top img-fluid" src="../../../assets/img/reactjs.png" alt="Card image">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">John Doe</h4>
+                                <p class="card-text">Some example text.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 pb-5">
+                        <div class="card">
+                            <div class="imgKhoaHoc">
+                                <img class="card-img-top img-fluid" src="../../../assets/img/reactNative.png" alt="Card image">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">John Doe</h4>
+                                <p class="card-text">Some example text.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-12 pb-5">
+                        <div class="card">
+                            <div class="imgKhoaHoc">
+                                <img class="card-img-top img-fluid" src="../../../assets/img/android.png" alt="Card image">
+                            </div>
+                            <div class="card-body">
+                                <h4 class="card-title">John Doe</h4>
+                                <p class="card-text">Some example text.</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!-- END DANH SÁCH KHÓA HỌC -->
+    </div>
+
+    <!-- BEGIN FOOTER -->
+    <footer id="footer" class="pt-5 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-12 px-4 footer-left">
+                    <a href="./index.html">
+                        <img src="../../../assets/img/cybersoft-logo-min.png" alt="logo-footer">
+                    </a>
+                    <p>CyberSoft Academy là học viện tiên phong tại Việt Nam áp dụng phương pháp đào tạo Active
+                        Learning và Flipped
+                        Learning thông qua các dự án thực tiễn trong lĩnh vực đào tạo CNTT. Học viên sẽ đóng vai trò là
+                        một Scrum member
+                        trong mô hình Agile để trở thành một lập trình chuyên nghiệp, đáp ứng mọi nhu cầu tuyển dụng
+                        của Doanh nghiệp
+                    </p>
+                </div>
+                <div class="col-md-3 col-12 px-4 footer-mid">
+                    <h4>THÔNG TIN</h4>
+                    <ul class="thongtin">
+                        <li><a href="../index.html">Trang chủ</a></li>
+                        <li><a href="./gioithieu.html">Giới thiệu</a></li>
+                        <li><a href="danhsachkhoahoc.html">Danh sách khóa học</a></li>
+                        <li><a href="./gocthuvien.html">Góc thư viên</a></li>
+                        <li><a href="./lienhe.html">Liên hệ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 col-12 px-4 footer-right">
+                    <h4>LIÊN HỆ ĐỂ ĐƯỢC TƯ VẤN</h4>
+                    <ul class="thongtin">
+                        <li><span>Cơ sở 1 :</span> 459 Sư Vạn Hạnh, Quận 10 - HCM</li>
+                        <li><span>Cơ sở 2 :</span> 82 Ung Văn Khiêm, Quận Bình Thạnh (cuối đường D2 - gần ĐH HuTech) -
+                            HCM</li>
+                        <li>
+                            <span>T :</span>
+                            +84 961.05.10.14
+                        </li>
+                        <li>
+                            <span>E :</span> info@cybersoft.edu.vn
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="../../../assets/js/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em"
+        crossorigin="anonymous"></script>
+    <script src="../../../assets/js/homeJS.js"></script>
+</body>
+
+</html>
